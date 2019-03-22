@@ -24,10 +24,10 @@ export class ListService {
   constructor(private http: HttpClient) { }
 
   /** POST: add a new hero to the database */
-  queryHero (hero: Hero): Observable<Hero> {
-    return this.http.post<Hero>(this.heroesUrl, hero, httpOptions)
-      .pipe(catchError(this.handleError('queryHero',hero)));
-  }
+//   queryHero (hero: Hero): Observable<Hero> {
+//     return this.http.post<Hero>(this.heroesUrl, hero, httpOptions)
+//       .pipe(catchError(this.handleError('queryHero',hero)));
+//   }
 
 // getData(){
 //   this.http.post(this.url).subscribe(res =>{
