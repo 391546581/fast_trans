@@ -1,0 +1,15 @@
+<div  id="div1">
+<ul >
+  <li *ngFor="let ele of listS">
+      <button title="{{ele.title}}" (click)="choose(ele)">{{ele.title}}</button>
+  </li>
+</ul>
+
+<div *ngIf="chooseOne">
+  <ul >
+    <li *ngFor="let ele of chooseOne.content">
+        <span appTranslate>{{ele}}</span>
+    </li>
+  </ul> 
+</div>  
+</div>
